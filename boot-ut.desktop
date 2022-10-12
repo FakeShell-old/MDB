@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Boot Ubuntu Touch
+Exec=/bin/bash -c "sudo dd if=/userdata/boot-ut.img of=/dev/disk/by-partlabel/boot_a && sudo reboot"
+Icon=/usr/share/icons/ubuntu.png

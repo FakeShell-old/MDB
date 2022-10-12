@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Boot Droidian
+Exec=/bin/bash -c "sudo dd if=/userdata/boot-droidian.img of=/dev/disk/by-partlabel/boot_a; if [ ! -f /userdata/rootfs-manjaro.img ]; then sudo mv /userdata/rootfs.img /userdata/rootfs-manjaro.img; sudo mv /userdata/rootfs-droidian.img /userdata/rootfs.img; fi; sudo reboot"
+Icon=/usr/share/icons/droidian.png
