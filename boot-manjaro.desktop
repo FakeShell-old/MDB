@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=Boot Manjaro
-Exec=/bin/bash -c "sudo mv /userdata/rootfs.img /userdata/rootfs-droidian.img && sudo mv /userdata/rootfs-manjaro.img /userdata/rootfs.img && sudo reboot"
+Exec=/bin/bash -c "sudo mv /userdata/rootfs.img /userdata/rootfs-droidian.img && sudo mv /userdata/rootfs-manjaro.img /userdata/rootfs.img && sudo dd if=/userdata/boot-manjaro.img of=/dev/disk/by-partlabel/boot_a && sudo reboot"
 Icon=/usr/share/icons/manjaro.png

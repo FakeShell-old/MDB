@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=Boot Droidian
-Exec=/bin/bash -c "sudo mv /userdata/rootfs.img /userdata/rootfs-manjaro.img && sudo mv /userdata/rootfs-droidian.img /userdata/rootfs.img && sudo reboot"
+Exec=/bin/bash -c "sudo mv /userdata/rootfs.img /userdata/rootfs-manjaro.img && sudo mv /userdata/rootfs-droidian.img /userdata/rootfs.img && sudo dd if=/userdata/boot-manjaro.img of=/dev/disk/by-partlabel/boot_a && sudo reboot"
 Icon=/usr/share/icons/droidian.png
